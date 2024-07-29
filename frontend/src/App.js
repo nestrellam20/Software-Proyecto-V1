@@ -1,25 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/')
+    axios.get('http://127.0.0.1:5000/appointments')
       .then(response => {
-        setItems(response.data);
+        setAppointments(response.data);
       })
       .catch(error => {
-        console.error('There was an error fetching the items!', error);
+        console.error('There was an error fetching the appointments!', error);
       });
   }, []);
 
   return (
-    <div>
-      <h1>Items</h1>
+    <div className="App">
+      <h1>Appointments</h1>
       <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
+        {appointments.map(appointment => (
+          <li key={appointment._id}>
+            {appointment.description} on {new Date(appointment.date_time).toLocaleString()}
+          </li>
         ))}
       </ul>
     </div>

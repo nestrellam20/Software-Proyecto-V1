@@ -1,9 +1,5 @@
-# Proyecto-Software-V1/backend/app/config.py
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
+import secrets
 
 class Config:
-    MONGO_URI = os.getenv("MONGO_CONNECTION_STRING")
-    MONGO_DB_NAME = os.getenv("MONGO_DB_NAME")
+    SECRET_KEY = secrets.token_hex(16)  # Generates a random 16-byte hex string
+    MONGO_URI = 'mongodb+srv://msaenzy9:msaenzy9@cluster0.lahyenk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'

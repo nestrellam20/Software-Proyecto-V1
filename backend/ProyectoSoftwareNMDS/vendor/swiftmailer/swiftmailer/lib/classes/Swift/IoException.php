@@ -1,0 +1,4 @@
+DE/PrivateAssemblies/Microsoft.VisualStudio.QualityTools.Tips.TuipPackage.dll' for ngen
+[1bd8:000c][2024-07-24T17:10:33] Processing file /Contents/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.TestTools.TestGeneration.dll
+[1bd8:000c][2024-07-24T17:10:33] Started: Copying file /Contents/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.TestTools.TestGeneration.dll to C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PrivateAssemblies\Microsoft.VisualStudio.TestTools.TestGeneration.dll
+[1bd8:000c][2024-07-24T17:10:33] Completed: Copying file /Contents/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.TestT
